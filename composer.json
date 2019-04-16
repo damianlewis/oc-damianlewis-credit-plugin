@@ -1,6 +1,6 @@
 {
     "name": "damianlewis/oc-credit-plugin",
-    "description": "Allows third-party attributions to be added for the OctoberCMS backend",
+    "description": "Allows third-party attributions to be added to the OctoberCMS backend",
     "type": "october-plugin",
     "license": "MIT",
     "authors": [
