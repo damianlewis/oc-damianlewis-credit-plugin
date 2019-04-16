@@ -1,0 +1,14 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    image_attributions:
+        type: repeater
+        titleFrom: code
+        form:
+            fields:
+                code:
+                    label: Attribution code
+                    type: textarea
+                    size: tiny
