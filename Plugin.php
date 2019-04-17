@@ -11,7 +11,7 @@ class Plugin extends PluginBase
     /**
      * @inheritDoc
      */
-    public function pluginDetails()
+    public function pluginDetails(): array
     {
         return [
             'name' => 'Credits',
@@ -56,7 +56,7 @@ class Plugin extends PluginBase
     /**
      * @inheritDoc
      */
-    public function registerReportWidgets()
+    public function registerReportWidgets(): array
     {
         return [
             Credits::class => [

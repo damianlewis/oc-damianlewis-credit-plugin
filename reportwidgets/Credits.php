@@ -4,7 +4,6 @@ namespace DamianLewis\Credits\ReportWidgets;
 
 use Backend\Classes\ReportWidgetBase;
 use DamianLewis\Credits\Models\Settings;
-use Illuminate\Support\Collection;
 
 class Credits extends ReportWidgetBase
 {
@@ -21,7 +20,7 @@ class Credits extends ReportWidgetBase
     /**
      * @inheritDoc
      */
-    public function defineProperties()
+    public function defineProperties(): array
     {
         return [
             'title' => [
@@ -43,11 +42,11 @@ class Credits extends ReportWidgetBase
     }
 
     /**
-     * Returns a collection of image attributions.
+     * Returns the image attributions.
      *
-     * @return Collection
+     * @return array
      */
-    protected function getImageAttributions()
+    protected function getImageAttributions(): array
     {
         $imageAttributions = Settings::get('image_attributions');
 
